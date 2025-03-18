@@ -122,12 +122,13 @@ bindsym $mod+a exec firefox amazon.co.jp
 bindsym $mod+b exec firefox
 bindsym $mod+Shift+b exec firefox "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
 bindsym $mod+Ctrl+b exec firefox http://mubou.seesaa.net
-bindsym $mod+c exec firefox chat.openai.com
+bindsym $mod+c exec firefox gemini.google.com
 bindsym $mod+Shift+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
-bindsym $mod+Ctrl+c exec java ~/cd.java
-bindsym $mod+Shift+d exec firefox deepl.com
+bindsym $mod+Ctrl+c exec firefox chatgpt.com
+bindsym $mod+Shift+d exec firefox calendar.google.com
+bindsym $mod+Ctrl+d exec firefox deepl.com
 bindsym $mod+e exec firefox keep.google.com
-bindsym $mod+g exec firefox gakujo.shizuoka.ac.jp
+bindsym $mod+g exec firefox gakujo.shizuoka.ac.jp/lcu-web/
 bindsym $mod+Shift+g exec firefox github.com/mxvish/?tab=repositories
 bindsym $mod+Ctrl+g exec firefox scholar.google.com
 bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
@@ -136,22 +137,21 @@ bindsym $mod+j exec firefox shonenjumpplus.com
 bindsym $mod+Shift+k exec firefox https://keybr.com
 bindsym $mod+Ctrl+k exec firefox https://www.kyorindo-netsuper.jp
 bindsym $mod+Shift+l exec firefox https://linkedin.com/in/koshima
-bindsym $mod+m exec firefox mail.google.com/mail/u/0/
+#bindsym $mod+m exec firefox mail.google.com/mail/u/0/
 bindsym $mod+Shift+m exec firefox google.com/maps
+bindsym $mod+Ctrl+m exec firefox "mypage-shinsotsusyokai.mynavi.jp/top?gig_actions=sso.login"
 bindsym $mod+n exec firefox amplenote.com/notes
-bindsym $mod+o exec firefox onedrive.live.com
-bindsym $mod+Shift+o exec firefox outlook.office.com
+bindsym $mod+o exec firefox outlook.office.com/mail
+bindsym $mod+Shift+o exec firefox onedrive.live.com
 bindsym $mod+p exec firefox pubmed.ncbi.nlm.nih.gov
 bindsym $mod+Shift+p exec firefox perplexity.ai
-bindsym $mod+Ctrl+p exec systemctl poweroff
 bindsym $mod+r exec firefox drive.google.com/drive/my-drive
-bindsym $mod+Ctrl+r exec systemctl reboot -i
 bindsym $mod+s exec firefox https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
 bindsym $mod+Shift+s exec firefox app.slack.com/client
 bindsym $mod+Ctrl+s exec firefox https://ib.surugabank.co.jp/im/IBGate
-bindsym $mod+t exec firefox https://todoist.com/app
+bindsym $mod+t exec firefox https://app.todoist.com/app
 bindsym $mod+Shift+t exec firefox https://teams.microsoft.com
-bindsym $mod+Ctrl+t exec firefox translate.google.com
+bindsym $mod+Ctrl+t exec firefox tver.jp/mypage/fav
 bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
