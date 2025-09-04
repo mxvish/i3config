@@ -49,14 +49,14 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Monospace Regular 11'
-bindsym Mod1+Ctrl+t exec xfce4-terminal --hide-menubar --hide-scrollbar --font='Monospace Regular 11'
+bindsym $mod+Return exec lxterminal
+bindsym Mod1+Ctrl+t exec lxterminal
 
 # kill focused window
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Noto Sans Regular 12"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -65,18 +65,13 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 
 # change focus
 bindsym $mod+h focus left
-#bindsym $mod+j focus down
-#bindsym $mod+k focus up
 bindsym $mod+l focus right
-#bindsym $mod+semicolon
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-bindsym $mod+Shift+e layout toggle split
+#bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 #bindsym $mod+Shift+space floating toggle
@@ -86,23 +81,25 @@ bindsym $mod+1 workspace number "1"
 bindsym $mod+2 workspace number "2"
 bindsym $mod+3 workspace number "3"
 bindsym $mod+4 exec xrandr --output eDP-1 --brightness 0.2
-bindsym $mod+5 exec xrandr --output eDP-1 --brightness 0.25
-bindsym $mod+6 workspace number "6"
-bindsym $mod+7 exec xrandr --output eDP-1 --brightness 0.35
+bindsym $mod+5 exec xrandr --output eDP-1 --brightness 0.3
+bindsym $mod+6 exec xrandr --output eDP-1 --brightness 0.4
+bindsym $mod+7 exec xrandr --output eDP-1 --brightness 0.6
 bindsym $mod+8 workspace number "8"
-bindsym $mod+9 exec xrandr --output eDP-1 --brightness 0.5
+bindsym $mod+9 exec xrandr --output eDP-1 --brightness 1
 bindsym $mod+0 exec xbacklight -set 0
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number "1"
 bindsym $mod+Shift+2 move container to workspace number "2"
 bindsym $mod+Shift+3 move container to workspace number "3"
+#bindsym $mod+Shift+4 move container to workspace number "4"
+#bindsym $mod+Shift+5 move container to workspace number "5"
 bindsym $mod+Shift+6 move container to workspace number "6"
+#bindsym $mod+Shift+7 move container to workspace number "7"
 bindsym $mod+Shift+8 move container to workspace number "8"
+#bindsym $mod+Shift+9 move container to workspace number "9"
 bindsym $mod+Shift+0 exec xbacklight -set 1
 
-# reload the configuration file
-#bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
@@ -110,54 +107,51 @@ bindsym $mod+Shift+r restart
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango: Noto Sans Regular 12
+    font pango: Noto Sans Regular 12
 	position top
-        status_command i3status
+    status_command i3status
 }
 
-exec --no-startup-id fcitx5 -d
-#exec pulseaudio -D
+exec --no-startup-id fcitx -d
 
 bindsym $mod+a exec firefox amazon.co.jp
 bindsym $mod+b exec firefox
 bindsym $mod+Shift+b exec firefox "https://fes.rakuten-bank.co.jp/MS/main/RbS?CurrentPageID=START&&COMMAND=LOGIN"
 bindsym $mod+Ctrl+b exec firefox http://mubou.seesaa.net
 bindsym $mod+c exec firefox gemini.google.com
-bindsym $mod+Shift+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
-bindsym $mod+Ctrl+c exec firefox chatgpt.com
-bindsym $mod+Shift+d exec firefox calendar.google.com
-bindsym $mod+Ctrl+d exec firefox deepl.com
-bindsym $mod+e exec firefox keep.google.com
-bindsym $mod+g exec firefox gakujo.shizuoka.ac.jp/lcu-web/
-bindsym $mod+Shift+g exec firefox github.com/mxvish/?tab=repositories
+bindsym $mod+Shift+c exec firefox chatgpt.com
+bindsym $mod+Ctrl+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
+bindsym $mod+Shift+d exec firefox deepl.com
+bindsym $mod+e exec firefox keybr.com
+bindsym $mod+Shift+e exec firefox keep.google.com
+bindsym $mod+g exec firefox github.com/mxvish/?tab=repositories
+bindsym $mod+Shift+g exec firefox gakujo.shizuoka.ac.jp
 bindsym $mod+Ctrl+g exec firefox scholar.google.com
 bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
 bindsym $mod+i exec firefox discord.com/channels/@me
 bindsym $mod+j exec firefox shonenjumpplus.com
-bindsym $mod+Shift+k exec firefox https://keybr.com
-bindsym $mod+Ctrl+k exec firefox https://www.kyorindo-netsuper.jp
+bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp
 bindsym $mod+Shift+l exec firefox https://linkedin.com/in/koshima
-#bindsym $mod+m exec firefox mail.google.com/mail/u/0/
+bindsym $mod+m exec firefox mail.google.com/mail/u/0/
 bindsym $mod+Shift+m exec firefox google.com/maps
-bindsym $mod+Ctrl+m exec firefox "mypage-shinsotsusyokai.mynavi.jp/top?gig_actions=sso.login"
 bindsym $mod+n exec firefox amplenote.com/notes
-bindsym $mod+o exec firefox outlook.office.com/mail
-bindsym $mod+Shift+o exec firefox onedrive.live.com
+bindsym $mod+o exec firefox onedrive.live.com
+bindsym $mod+Shift+o exec firefox outlook.office.com
 bindsym $mod+p exec firefox pubmed.ncbi.nlm.nih.gov
-bindsym $mod+Shift+p exec firefox perplexity.ai
-bindsym $mod+r exec firefox drive.google.com/drive/my-drive
+bindsym $mod+r exec firefox https://drive.google.com/drive/recent
+bindsym $mod+Ctrl+r exec firefox https://tver.jp/mypage/fav
+bindsym $mod+Shift+Ctrl+r exec firefox https://reddit.com
 bindsym $mod+s exec firefox https://www.rakuten-sec.co.jp/ITS/V_ACT_Login.html
-bindsym $mod+Shift+s exec firefox app.slack.com/client
-bindsym $mod+Ctrl+s exec firefox https://ib.surugabank.co.jp/im/IBGate
-bindsym $mod+t exec firefox https://app.todoist.com/app
+bindsym $mod+Shift+s exec firefox https://ib.surugabank.co.jp/im/IBGate
+bindsym $mod+Ctrl+s exec firefox app.slack.com/client
+bindsym $mod+t exec firefox https://todoist.com/app
 bindsym $mod+Shift+t exec firefox https://teams.microsoft.com
-bindsym $mod+Ctrl+t exec firefox tver.jp/mypage/fav
+bindsym $mod+Ctrl+t exec firefox translate.google.com
 bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
-bindsym $mod+w exec firefox https://www.accuweather.com/en/jp/hamamatsu-shi/226090/weather-forecast/226090
 bindsym $mod+x exec i3lock -c 000000
-bindsym $mod+y exec firefox https://www.youtube.com/feed/playlists
-bindsym $mod+Shift+y exec blueman-manager
+bindsym $mod+y exec firefox https://youtube.com/feed/playlists
+bindsym $mod+Shift+y exec blueberry
 
 bindsym Print exec scrot
