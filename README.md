@@ -3,8 +3,8 @@ i3 config files
 
 # Installation
 ```sh
-wget https://raw.githubusercontent.com/mxvish/i3config/main/i3status.conf
+git clone https://github.com/mxvish/i3config.git
+cd i3config
+mv config ~/.config/i3/
 sudo mv i3status.conf /etc/
-
-curl https://raw.githubusercontent.com/mxvish/i3config/main/config > ~/.config/i3/config
 ```
