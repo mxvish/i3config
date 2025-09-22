@@ -16,6 +16,7 @@ set $menu wmenu-run -f "Noto Sans Regular 12"
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
@@ -73,6 +74,7 @@ set $menu wmenu-run -f "Noto Sans Regular 12"
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
+    floating_modifier $mod normal
 
     # Reload the configuration file
     bindsym $mod+Shift+r reload
@@ -179,6 +181,10 @@ bar {
     }
 }
 
+input * {
+    xkb_options "ctrl:nocaps"
+}
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +3%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -3%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -203,7 +209,8 @@ bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp
 bindsym $mod+Shift+l exec firefox https://linkedin.com/in/koshima
 bindsym $mod+m exec firefox mail.google.com/mail/u/0/
 bindsym $mod+Shift+m exec firefox google.com/maps
-bindsym $mod+n exec firefox amplenote.com/notes
+bindsym $mod+Ctrl+m exec firefox muji.com/jp/ja/store
+bindsym $mod+n exec firefox github.com/mxvish/private
 bindsym $mod+o exec firefox onedrive.live.com
 bindsym $mod+Shift+o exec firefox outlook.office.com
 bindsym $mod+p exec firefox https://plus.nhk.jp/
