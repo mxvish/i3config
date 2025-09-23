@@ -229,7 +229,7 @@ bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0Qisqnwk
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
 bindsym $mod+x exec swaylock -c 000000
 bindsym $mod+y exec firefox https://youtube.com/feed/playlists
-bindsym $mod+Shift+y exec blueberry
+bindsym $mod+Shift+y exec blueman-manager
 
 bindsym Print exec scrot
 exec --no-startup-id fcitx5 -d
