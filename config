@@ -232,6 +232,6 @@ bindsym $mod+y exec firefox https://youtube.com/feed/playlists
 bindsym $mod+Shift+y exec blueberry
 
 bindsym Print exec scrot
-exec --no-startup-id fcitx -d
+exec --no-startup-id fcitx5 -d
 
 include /etc/sway/config.d/*
