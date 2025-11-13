@@ -231,7 +231,7 @@ bindsym $mod+x exec swaylock -c 000000
 bindsym $mod+y exec firefox https://youtube.com/feed/playlists
 bindsym $mod+Shift+y exec blueman-manager
 
-bindsym Print exec scrot
+bindsym Print exec grim
 exec --no-startup-id fcitx5 -d
 
 include /etc/sway/config.d/*
