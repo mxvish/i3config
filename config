@@ -206,13 +206,15 @@ bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/
 bindsym $mod+i exec firefox discord.com/channels/@me
 bindsym $mod+Shift+i exec firefox instagram.com
 bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp
-bindsym $mod+Shift+l exec firefox https://linkedin.com/in/koshima
+bindsym $mod+Shift+l exec firefox https://github.com/mxvish/lab
+bindsym $mod+Ctrl+l exec firefox https://linkedin.com/in/koshima
 bindsym $mod+m exec firefox mail.google.com/mail/u/0/
 bindsym $mod+Shift+m exec firefox google.com/maps
 bindsym $mod+Ctrl+m exec firefox muji.com/jp/ja/store
 bindsym $mod+n exec firefox github.com/mxvish/private
 bindsym $mod+o exec firefox onedrive.live.com
 bindsym $mod+Shift+o exec firefox outlook.office.com
+bindsym $mod+Ctrl+o exec firefox https://overleaf.com
 bindsym $mod+p exec firefox pubmed.ncbi.nlm.nih.gov
 bindsym $mod+r exec firefox https://drive.google.com/drive/my-drive
 bindsym $mod+Ctrl+r exec firefox https://tver.jp/mypage/fav
