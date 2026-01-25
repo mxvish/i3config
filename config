@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -170,7 +170,7 @@ bindsym $mod+Ctrl+g exec firefox scholar.google.com
 bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
 bindsym $mod+i exec firefox discord.com/channels/@me
 bindsym $mod+Shift+i exec firefox instagram.com
-bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp
+bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp/shop/storetour_entry.php?shop_code=KRD_088
 bindsym $mod+Shift+l exec firefox https://github.com/mxvish/lab
 bindsym $mod+Ctrl+l exec firefox https://linkedin.com/in/koshima
 bindsym $mod+m exec firefox mail.google.com/mail/u/0/
