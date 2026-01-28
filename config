@@ -124,8 +124,8 @@ set $ws10 "10"
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 exec brightnessctl set 3%
-bindsym $mod+5 exec brightnessctl set 5%
+bindsym $mod+4 exec brightnessctl set 1%
+bindsym $mod+5 exec brightnessctl set 4%
 bindsym $mod+6 exec brightnessctl set 8%
 bindsym $mod+7 exec brightnessctl set 15%
 bindsym $mod+8 exec brightnessctl set 30%
@@ -163,14 +163,13 @@ bindsym $mod+Shift+c exec firefox chatgpt.com
 bindsym $mod+Ctrl+c exec firefox docs.google.com/spreadsheets/d/1ECwWvDWYEH4iZL_Hy9V2Xqy0NOVmpsAP/
 bindsym $mod+Shift+d exec firefox deepl.com
 bindsym $mod+e exec firefox keybr.com
-bindsym $mod+Shift+e exec firefox keep.google.com
 bindsym $mod+g exec firefox github.com/mxvish/?tab=repositories
 bindsym $mod+Shift+g exec firefox gakujo.shizuoka.ac.jp
 bindsym $mod+Ctrl+g exec firefox scholar.google.com
 bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
 bindsym $mod+i exec firefox discord.com/channels/@me
 bindsym $mod+Shift+i exec firefox instagram.com
-bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp/shop/storetour_entry.php?shop_code=KRD_088
+bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp
 bindsym $mod+Shift+l exec firefox https://github.com/mxvish/lab
 bindsym $mod+Ctrl+l exec firefox https://linkedin.com/in/koshima
 bindsym $mod+m exec firefox mail.google.com/mail/u/0/
@@ -193,7 +192,7 @@ bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
 bindsym $mod+w exec firefox https://web.whatsapp.com
-bindsym $mod+x exec swaylock -c 000000
+bindsym $mod+x exec i3lock -c 000000
 bindsym $mod+y exec firefox https://youtube.com/feed/playlists
 bindsym $mod+Shift+y exec bluedevil-wizard
 
