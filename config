@@ -192,7 +192,6 @@ bindsym $mod+Ctrl+t exec firefox translate.google.com
 bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
-bindsym $mod+w exec firefox https://web.whatsapp.com
 bindsym $mod+x exec i3lock -c 000000
 bindsym $mod+y exec firefox https://youtube.com/feed/playlists
 bindsym $mod+Shift+y exec bluedevil-wizard
