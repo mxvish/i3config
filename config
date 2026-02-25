@@ -177,7 +177,7 @@ bindsym $mod+m exec firefox mail.google.com/mail/u/0/
 bindsym $mod+Shift+m exec firefox google.com/maps
 bindsym $mod+Ctrl+m exec firefox muji.com/jp/ja/store
 bindsym $mod+n exec firefox github.com/mxvish/private
-bindsym $mod+o exec firefox onedrive.live.com
+bindsym $mod+o exec firefox https://onedrive.live.com/?view=0
 bindsym $mod+Shift+o exec firefox outlook.office.com
 bindsym $mod+Ctrl+o exec firefox https://overleaf.com
 bindsym $mod+p exec firefox pubmed.ncbi.nlm.nih.gov
@@ -188,7 +188,7 @@ bindsym $mod+s exec firefox https://www.sbisec.co.jp/ETGate
 bindsym $mod+Shift+s exec firefox https://ib.surugabank.co.jp/im/IBGate
 bindsym $mod+t exec firefox https://todoist.com/app
 bindsym $mod+Shift+t exec firefox https://teams.microsoft.com
-bindsym $mod+Ctrl+t exec firefox translate.google.com
+bindsym $mod+Ctrl+t exec firefox translate.google.com/?sl=auto
 bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
