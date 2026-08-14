@@ -198,7 +198,3 @@ bindsym $mod+Shift+y exec bluedevil-wizard
 
 bindsym Print exec scrot
 exec --no-startup-id fcitx5 -d
-
-exec --no-startup-id xset s off
-exec --no-startup-id xset s noblank
-exec --no-startup-id xset -dpms
