@@ -126,7 +126,7 @@ bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
 bindsym $mod+4 exec brightnessctl set 1%
 bindsym $mod+5 exec brightnessctl set 5%
-bindsym $mod+6 exec brightnessctl set 8%
+bindsym $mod+6 exec brightnessctl set 10%
 bindsym $mod+7 exec brightnessctl set 15%
 bindsym $mod+8 exec brightnessctl set 30%
 bindsym $mod+9 exec brightnessctl set 100%
@@ -168,7 +168,7 @@ bindsym $mod+Shift+g exec firefox gakujo.shizuoka.ac.jp
 bindsym $mod+Ctrl+g exec firefox scholar.google.com
 bindsym $mod+Shift+h exec firefox https://www.lib-city-hamamatsu.jp/licsxp-opac/WOpacEsSchCmpdDispAction.do?moveToGamenId=esschcmpd
 bindsym $mod+i exec firefox instagram.com
-bindsym $mod+Shift+i exec firefox tiktok.com/friends 
+bindsym $mod+Shift+i exec firefox tiktok.com/friends
 bindsym $mod+Ctrl+i exec firefox discord.com/channels/@me
 bindsym $mod+Shift+k exec firefox https://www.kyorindo-netsuper.jp/shop/storetour_entry.php?shop_code=KRD_088
 bindsym $mod+Shift+l exec firefox https://github.com/mxvish/lab
@@ -193,6 +193,7 @@ bindsym $mod+Ctrl+t exec firefox translate.google.com/?sl=auto
 bindsym $mod+u exec firefox https://opac.lib.shizuoka.ac.jp/simple/
 bindsym $mod+v exec firefox docs.google.com/spreadsheets/d/1iuQ-DxULNRZp0QisqnwkH33GpLA8dkec/
 bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welcome.cgi
+bindsym $mod+Ctrl+v exec vesktop
 bindsym $mod+x exec i3lock -c 000000
 bindsym $mod+y exec firefox https://youtube.com/feed/playlists
 bindsym $mod+Shift+y exec bluedevil-wizard
