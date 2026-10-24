@@ -196,7 +196,8 @@ bindsym $mod+Shift+v exec firefox vpn.inf.shizuoka.ac.jp/dana-na/auth/url_3/welc
 bindsym $mod+Ctrl+v exec vesktop
 bindsym $mod+x exec i3lock -c 000000
 bindsym $mod+y exec firefox https://youtube.com/feed/playlists
-bindsym $mod+Shift+y exec bluedevil-wizard
+bindsym $mod+Shift+y exec firefox https://news.yahoo.co.jp/ranking/comment
+#bindsym $mod+Shift+y exec bluedevil-wizard
 
 bindsym Print exec scrot
 exec --no-startup-id fcitx5 -d
